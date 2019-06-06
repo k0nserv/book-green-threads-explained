@@ -27,7 +27,7 @@ If you are the curious kind and want to understand how things work, then read on
 
 In addition, this should be interesting if:
 
-* You’re new to Rust and want to learn more about the more advanced uses of the language.
+* You’re new to Rust and want to learn more about its features.
 * You have followed the discussions in the Rust community about async/await, the Pin-API and why we need generators. In this case I try to put all the pieces together in this article.
 * If you want to learn the basics of inline assembly in Rust.
 * If you’re just curious. 
