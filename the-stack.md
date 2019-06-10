@@ -126,7 +126,7 @@ Unfortunately to show this I had to increase the stack size to 1024 bytes to all
 
 ### Taking a look at the stack
 
-However, I made a altered version of our example that you can run which prints out two text files one `BEFORE.txt`that prints out our stack before we switch over to it and one `AFTER.txt`that prints out the stack after we switch over to it. You can then see for yourself how the stack now is alive and used by our code.
+However, I made a altered version of our example that you can run which prints out two text files one `BEFORE.txt`that prints out our stack before we switch over to it and one `AFTER.txt`that prints out the stack after we switched. You can then see for yourself how the stack now is alive and used by our code.
 
 {% hint style="info" %}
 If you see anything you don't recognize in this code, relax, we will go through them thoroughly very soon.
