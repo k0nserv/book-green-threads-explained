@@ -279,7 +279,7 @@ fn guard() {
 
 Here we meet our first portability issue. `[cfg_attr(any(target_os="windows", target_os="linux"), naked)]` is a conditional compilation attribute. If the target OS is Windows or Linux we compile this function with the `#[naked]`attribute, if not we don't compile it with the attribute. This way the code runs fine on Windows, the [Rust Playground](https://play.rust-lang.org/?version=nightly&mode=debug&edition=2018&gist=5fecced06eda366283ed34cbbfbd2903) and on my mac.
 
-The function means that the function we passe in has returned and that means our thread is finished running its task so we de-references our `Runtime`and call `t_return()`. We could have made a function that did some additional work when a thread is finished but right now our  `t_return()`function does all we need. It marks our thread as `Available`\(if it's not our base thread\) and `yields`so we can resume work on a different thread.
+The function means that the function we passed in has returned and that means our thread is finished running its task so we de-references our `Runtime`and call `t_return()`. We could have made a function that did some additional work when a thread is finished but right now our  `t_return()`function does all we need. It marks our thread as `Available`\(if it's not our base thread\) and `yields`so we can resume work on a different thread.
 
 ```rust
 pub fn yield_thread() {
